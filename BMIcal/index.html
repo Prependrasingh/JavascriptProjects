@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #ffa8b6, #fcd1d1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;   /* better than height */
+        margin: 0;
+        padding: 15px;       /* prevents edge sticking on mobile */
+    }
+
+    .container {
+        background: #8458B3;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 320px;    /* better responsive width */
+        text-align: center;
+        color: white;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #45a049;
+        transform: scale(1.03);
+    }
+
+    .result {
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>BMI Calculator</h2>
+
+    <input type="number" id="height" placeholder="Height (cm)">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    
+    <button onclick="calculateBMI()">Calculate</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</script>
+
+</body>
+</html>
