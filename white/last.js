@@ -1,0 +1,11 @@
+console.log('Hello, Next.js!');
+// console.log(45+57);
+// console.log(45+44234442424);
+const os = require('os');
+console.log(os.homedir());
+console.log(os.hostname());
+console.log(os.platform());
+console.log(os.release());
+console.log(os.totalmem());
+console.log(os.userInfo());
+console.log(os.networkInterfaces());
